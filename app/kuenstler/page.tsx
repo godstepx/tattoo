@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import ArtistShowcase from '../components/ArtistShowcase';
-import siteContent from '../content/texts.json';
 
 export const metadata: Metadata = {
   title: 'Unsere Künstler - TattooZone Studio',

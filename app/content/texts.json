@@ -4,7 +4,11 @@
       "description": "Professionelles Tattoo Studio mit modernem Design und individueller Beratung",
       "phone": "+49 123 456789",
       "email": "booking.roarink@gmail.com",
-      "address": "Musterstraße 123, 12345 Berlin",
+    "address": {
+      "street": "Musterstraße 123",
+      "city": "Berlin",
+      "country": "Deutschland"
+    },
       "socialMedia": {
         "instagram": "https://instagram.com/tattoozone_aachen",
         "facebook": "https://facebook.com/tattoozoneaachen"

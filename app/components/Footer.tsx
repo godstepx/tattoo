@@ -40,9 +40,9 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Kontakt</h3>
             <address className="not-italic text-gray-300">
-              <p className="mb-2">{siteContent.siteInfo.address.street}</p>
-              <p className="mb-2">{siteContent.siteInfo.address.city}</p>
-              <p className="mb-4">{siteContent.siteInfo.address.country}</p>
+              <p className="mb-2">{siteContent.siteInfo.address?.street}</p>
+              <p className="mb-2">{siteContent.siteInfo.address?.city}</p>
+              <p className="mb-4">{siteContent.siteInfo.address?.country}</p>
               <p className="mb-2">
                 <span className="font-semibold text-white mr-2">Telefon:</span>
                 <a href={`tel:${siteContent.siteInfo.phone}`} className="hover:text-white transition-colors">
