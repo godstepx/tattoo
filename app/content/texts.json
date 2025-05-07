@@ -1,0 +1,77 @@
+{
+    "siteInfo": {
+      "title": "ROAR INK - Tattoo Studio",
+      "description": "Professionelles Tattoo Studio mit modernem Design und individueller Beratung",
+      "phone": "+49 123 456789",
+      "email": "booking.roarink@gmail.com",
+      "address": "Musterstraße 123, 12345 Berlin",
+      "socialMedia": {
+        "instagram": "https://instagram.com/tattoozone_aachen",
+        "facebook": "https://facebook.com/tattoozoneaachen"
+      },
+      "openingHours": [
+        { "day": "Montag - Freitag", "hours": "13:00 - 21:00" },
+        { "day": "Samstag", "hours": "11:00 - 17:00" },
+        { "day": "Sonntag", "hours": "Geschlossen" }
+      ]
+    },
+    "home": {
+      "hero": {
+        "title": "ROAR INK",
+        "subtitle": "WILLKOMMEN BEI",
+        "buttonText": "MEHR ERFAHREN"
+      },
+      "about": {
+        "title": "Über uns",
+        "content": "TattooZone wurde 2023 gegründet und ist Aachens neuestes Tattoo-Studio. Unser junges Team besteht aus drei enthusiastischen Künstlern mit unterschiedlichen Stilrichtungen. Was uns ausmacht, ist unsere Kreativität und die Leidenschaft für außergewöhnliche Designs.\n\nAls neues Studio legen wir besonderen Wert auf modernste Hygienestandards und Qualitätsmaterialien. Jedes Tattoo wird in persönlicher Absprache gestaltet. Bei uns steht der Kunde im Mittelpunkt - wir nehmen uns Zeit für dich und deine Ideen, damit du mit deinem Tattoo vollkommen zufrieden bist."
+      },
+      "gallery": {
+        "title": "Unsere Arbeiten",
+        "subtitle": "Ein Blick auf unsere ersten Werke",
+        "buttonText": "Mehr sehen"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "subtitle": "Vereinbare einen Termin",
+        "content": "Du hast eine Idee für dein nächstes Tattoo? Kontaktiere uns telefonisch oder per E-Mail für eine unverbindliche Beratung oder Terminvereinbarung."
+      },
+      "appointment": {
+        "title": "TERMIN VEREINBAREN",
+        "content": "Um einen Termin für dein Tattoo zu vereinbaren schicke uns am besten direkt eine E-Mail.",
+        "buttonText": "ZUR ANFAHRT"
+      }
+    },
+    "gallery": {
+      "title": "Galerie",
+      "subtitle": "Entdecke unsere Kunstwerke",
+      "description": "Hier findest du unsere ersten Arbeiten. Jedes Tattoo ist einzigartig. Von Dotwork über Geometrisch bis zu Comic-Style - wir setzen deine Ideen kreativ um."
+    },
+    "contact": {
+      "title": "Kontaktiere uns",
+      "subtitle": "Wir freuen uns auf deine Nachricht",
+      "description": "Für Terminanfragen oder Fragen zu unseren Dienstleistungen kannst du uns gerne anrufen oder eine E-Mail schreiben.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-Mail",
+      "addressLabel": "Adresse"
+    },
+    "artists": [
+      {
+        "name": "Jana Weber",
+        "style": "Dotwork, Geometrisch",
+        "experience": "3 Jahre",
+        "bio": "Jana liebt präzise Punktarbeit und geometrische Designs mit modernem Touch."
+      },
+      {
+        "name": "Markus Bauer",
+        "style": "Comic, Watercolor",
+        "experience": "4 Jahre",
+        "bio": "Markus bringt Farbe ins Studio mit seinen lebendigen Comic-Designs und Aquarell-Techniken."
+      },
+      {
+        "name": "Nina Schmidt",
+        "style": "Blackwork, Minimalistisch",
+        "experience": "2 Jahre",
+        "bio": "Nina kreiert ausdrucksstarke Designs mit klaren Linien und einem Hauch von Minimalismus."
+      }
+    ]
+  }
