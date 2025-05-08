@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { HiMenu, HiX } from 'react-icons/hi'; // Import menu icons
 import { useState } from 'react';
 import siteContent from '../content/texts.json';
 
@@ -51,6 +52,16 @@ const Navigation = () => {
               <FaFacebookF size={20} />
             </Link>
           </div>
+        </div>
+
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="text-black hover:text-secondary transition-colors"
+            aria-label="Toggle Menu"
+          >
+            {isMobileMenuOpen ? <HiX size={28} /> : <HiMenu size={28} />}
+          </button>
         </div>
       </div>
 
