@@ -56,7 +56,7 @@ export default function GalleryPreview({ title, subtitle, buttonText }: GalleryP
   return (
     <section className="py-24 bg-white">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <motion.h2 
             className="text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}

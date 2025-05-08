@@ -54,7 +54,7 @@ export default function About({ id, title, content, artists }: AboutProps) {
             </div>
 
             <div className="mt-10">
-              <h3 className="text-3xl font-semibold mb-6 text-gray-800">Our Artists</h3>
+              <h3 className="text-3xl font-semibold mb-6 text-gray-800">Unsere Künstler</h3>
               {artists.map((artist) => (
                 <div key={artist.name} className="mb-6 p-4 border border-gray-200 rounded-lg shadow-sm bg-white">
                   <h4 className="text-2xl font-bold text-primary mb-2">{artist.name}</h4>
@@ -66,7 +66,7 @@ export default function About({ id, title, content, artists }: AboutProps) {
                     href={`/kuenstler?artist=${encodeURIComponent(artist.name)}`} 
                     className="inline-block text-primary hover:text-accent font-medium transition-colors"
                   >
-                    View {artist.name}'s Work &rarr;
+                    {artist.name}'s Arbeit &rarr;
                   </Link>
                 </div>
               ))}
