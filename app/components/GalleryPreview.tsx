@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Lightbox from './Lightbox';
 
 interface GalleryPreviewProps {
   title: string;
@@ -13,22 +14,29 @@ interface GalleryPreviewProps {
 
 // In einer echten App würden wir die Bilder dynamisch laden
 const previewImages = [
-  '/images/tattoo1.jpg',
-  '/images/tattoo2.jpg',
-  '/images/tattoo3.jpg',
-  '/images/tattoo4.jpg',
-  '/images/tattoo5.jpg',
-  '/images/tattoo6.jpg',
+  '/phillip_1.jpg',
+  '/phillip_2.jpg',
+  '/phillip_3.jpg',
+  '/freddy_1.jpg',
+  '/freddy_2.jpg',
+  '/freddy_3.jpg',
 ];
 
 export default function GalleryPreview({ title, subtitle, buttonText }: GalleryPreviewProps) {
-  // Simuliere das Laden der Bilder
   const [images, setImages] = useState<string[]>([]);
-  
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   useEffect(() => {
-    // In echter Implementierung würden wir hier die Bilder aus dem Verzeichnis laden
     setImages(previewImages);
   }, []);
+
+  const openLightbox = (image: string) => {
+    setSelectedImage(image);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
 
   const container = {
     hidden: { opacity: 0 },
@@ -79,8 +87,9 @@ export default function GalleryPreview({ title, subtitle, buttonText }: GalleryP
           {images.slice(0, 6).map((image, index) => (
             <motion.div 
               key={index} 
-              className="gallery-item"
+              className="gallery-item cursor-pointer"
               variants={item}
+              onClick={() => openLightbox(image)}
             >
               <img 
                 src={image} 
@@ -96,8 +105,11 @@ export default function GalleryPreview({ title, subtitle, buttonText }: GalleryP
           ))}
         </motion.div>
 
+        {/* Lightbox */}
+        <Lightbox image={selectedImage} onClose={closeLightbox} />
+
         <div className="text-center mt-12">
-          <Link href="/galerie" className="btn btn-outline">
+          <Link href="/kuenstler" className="btn btn-outline">
             {buttonText}
           </Link>
         </div>

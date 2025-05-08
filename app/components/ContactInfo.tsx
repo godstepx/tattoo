@@ -90,17 +90,32 @@ export default function ContactInfo({ title, subtitle, content, phone, email, ad
           >
             <div className="w-full h-full min-h-[400px] rounded-lg overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.5461498101136!2d6.0813567153206505!3d50.77563537952181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0995d30ec79ed%3A0xceb955825e2b5e15!2sAachen%20City%20Center!5e0!3m2!1sen!2sde!4v1649777777777!5m2!1sen!2sde" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.3396715622052!2d6.80694377690723!3d51.23123893083979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ca12d413de5d%3A0x658f76a667975336!2sRoar%20Ink%20Tattoo!5e0!3m2!1sde!2sde!4v1746701925364!5m2!1sde!2sde" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0, minHeight: '400px' }} 
                 allowFullScreen={true} 
-                loading="lazy"
-                aria-hidden="false"
+                loading="lazy" 
+                aria-hidden="false" 
                 title="Standort auf Google Maps"
               />
             </div>
           </motion.div>
+        </div>
+
+        <div className="mt-12 bg-gray-100 p-6 rounded-lg shadow-md">
+          <p>
+            Um einen <strong>Termin für dein Tattoo</strong> zu vereinbaren, schicke uns am besten direkt eine E-Mail an{' '}
+            <a href="mailto:booking.roarink@gmail.com" className="text-accent hover:underline">
+              booking.roarink@gmail.com
+            </a>{' '}
+            mit deinen konkreten Ideen für das Motiv, gerne auch mit Fotoanhängen. Wir beraten Dich im Anschluss mit einem{' '}
+            <strong>Beratungstermin</strong> ausführlich. Der Preis hängt von der Größe und dem Aufwand ab, die wir im Beratungsgespräch
+            einschätzen können.
+          </p>
+          <p className="mt-4">
+            Bei Terminvereinbarung benötigen wir eine Anzahlung in Höhe von <strong>50,00 €</strong>.
+          </p>
         </div>
       </div>
     </section>

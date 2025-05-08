@@ -3,7 +3,7 @@ import path from 'path';
 
 export async function getGalleryImages() {
   try {
-    const imagesDirectory = path.join(process.cwd(), 'public/images');
+    const imagesDirectory = path.join(process.cwd(), 'public');
     
     if (!fs.existsSync(imagesDirectory)) {
       console.warn('Das Verzeichnis public/images existiert nicht!');

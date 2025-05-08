@@ -1,12 +1,27 @@
+'use client';
+
 import Link from 'next/link';
+import React from 'react';
 
 interface HeroProps {
   title: string;
   subtitle?: string;
   buttonText: string;
+  buttonLink: string;
 }
 
-const Hero = ({ title, subtitle, buttonText }: HeroProps) => {
+const Hero = ({ title, subtitle, buttonText, buttonLink }: HeroProps) => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (buttonLink.startsWith('#')) {
+      e.preventDefault();
+      const targetId = buttonLink.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <section className="relative min-h-[100vh] flex flex-col items-center justify-center text-center bg-light overflow-hidden">
       <video 
@@ -25,7 +40,7 @@ const Hero = ({ title, subtitle, buttonText }: HeroProps) => {
         <h1 className="text-7xl sm:text-8xl md:text-9xl font-light tracking-wide mb-16">
           {title}
         </h1>
-        <Link href="/about">
+        <Link href={buttonLink} onClick={handleScroll}>
           <button className="border border-primary px-8 py-3 text-sm uppercase tracking-widest hover:bg-primary hover:text-light transition-colors">
             {buttonText}
           </button>

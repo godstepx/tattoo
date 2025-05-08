@@ -26,6 +26,36 @@ export const metadata: Metadata = {
   keywords: ['Tattoo', 'Tätowierung', 'Tattoo Studio', 'Kunst', 'Körperkunst'],
   authors: [{ name: siteContent.siteInfo.title }],
   viewport: 'width=device-width, initial-scale=1',
+  icons: {
+    icon: '/favicon.png',
+  },
+  openGraph: {
+    title: siteContent.siteInfo.title,
+    description: siteContent.siteInfo.description,
+    url: siteContent.siteInfo.url,
+    siteName: siteContent.siteInfo.title,
+    images: [
+      {
+        url: `${siteContent.siteInfo.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: siteContent.siteInfo.title,
+      },
+    ],
+    locale: 'de_DE',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: siteContent.siteInfo.twitterHandle,
+    creator: siteContent.siteInfo.twitterHandle,
+    title: siteContent.siteInfo.title,
+    description: siteContent.siteInfo.description,
+    images: [`${siteContent.siteInfo.url}/twitter-image.jpg`],
+  },
+  alternates: {
+    canonical: siteContent.siteInfo.url,
+  },
 };
 
 export default function RootLayout({

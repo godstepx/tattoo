@@ -17,10 +17,13 @@ export default function Home() {
         title={siteContent.home.hero.title}
         subtitle={siteContent.home.hero.subtitle}
         buttonText={siteContent.home.hero.buttonText}
+        buttonLink="#about-section"
       />
       <About 
+        id="about-section"
         title={siteContent.home.about.title}
         content={siteContent.home.about.content}
+        artists={siteContent.artists}
       />
       <GalleryPreview 
         title={siteContent.home.gallery.title}

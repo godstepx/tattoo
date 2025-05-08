@@ -4,14 +4,16 @@
       "description": "Professionelles Tattoo Studio mit modernem Design und individueller Beratung",
       "phone": "+49 123 456789",
       "email": "booking.roarink@gmail.com",
+      "url": "https://roar-ink.de",
+      "twitterHandle": "@yourTwitter",
     "address": {
-      "street": "Musterstraße 123",
-      "city": "Berlin",
+      "street": "Dorotheenstraße 14",
+      "city": "Düsseldorf",
       "country": "Deutschland"
     },
       "socialMedia": {
-        "instagram": "https://instagram.com/tattoozone_aachen",
-        "facebook": "https://facebook.com/tattoozoneaachen"
+        "instagram": "https://instagram.com/roar_ink",
+        "facebook": "https://facebook.com/RoarInk"
       },
       "openingHours": [
         { "day": "Montag - Freitag", "hours": "13:00 - 21:00" },
@@ -27,8 +29,8 @@
       },
       "about": {
         "title": "Über uns",
-        "content": "TattooZone wurde 2023 gegründet und ist Aachens neuestes Tattoo-Studio. Unser junges Team besteht aus drei enthusiastischen Künstlern mit unterschiedlichen Stilrichtungen. Was uns ausmacht, ist unsere Kreativität und die Leidenschaft für außergewöhnliche Designs.\n\nAls neues Studio legen wir besonderen Wert auf modernste Hygienestandards und Qualitätsmaterialien. Jedes Tattoo wird in persönlicher Absprache gestaltet. Bei uns steht der Kunde im Mittelpunkt - wir nehmen uns Zeit für dich und deine Ideen, damit du mit deinem Tattoo vollkommen zufrieden bist."
-      },
+        "content": "Phil ist ausgebildeter Mediengestalter und bringt über 12 Jahre Tattoo-Erfahrung mit.\nSeine Spezialität: Freehand-Tattoos – dabei wird das individuell besprochene Motiv direkt auf die Haut gezeichnet, ganz ohne Schablone.\nOb Full Color oder Black & Grey, stilübergreifendes Arbeiten ist für ihn selbstverständlich. Seine Vielseitigkeit und sichere Hand machen jedes Tattoo zu einem Unikat. \n\n Freddy ist studierter Grafikdesigner und bringt sein Know-how in einen einzigartigen Dot/Linework-Stil ein.\nSeine Motive zeichnen sich durch kreative Details und grafische Präzision aus.\nAuf Wunsch entwirft er Custom-Designs, individuell zugeschnitten auf die Vorstellungen seiner Kund:innen – ganz persönlich, ganz besonders."      
+},
       "gallery": {
         "title": "Unsere Arbeiten",
         "subtitle": "Ein Blick auf unsere ersten Werke",
@@ -60,22 +62,28 @@
     },
     "artists": [
       {
-        "name": "Jana Weber",
-        "style": "Dotwork, Geometrisch",
-        "experience": "3 Jahre",
-        "bio": "Jana liebt präzise Punktarbeit und geometrische Designs mit modernem Touch."
-      },
-      {
-        "name": "Markus Bauer",
-        "style": "Comic, Watercolor",
-        "experience": "4 Jahre",
-        "bio": "Markus bringt Farbe ins Studio mit seinen lebendigen Comic-Designs und Aquarell-Techniken."
-      },
-      {
-        "name": "Nina Schmidt",
+        "name": "Philipp",
         "style": "Blackwork, Minimalistisch",
-        "experience": "2 Jahre",
-        "bio": "Nina kreiert ausdrucksstarke Designs mit klaren Linien und einem Hauch von Minimalismus."
+        "experience": "6 Jahre",
+        "bio": "Philipp kreiert ausdrucksstarke Designs mit klaren Linien und einem Hauch von Minimalismus.",
+        "images": [
+          "/philipp.jpg",
+          "/phillip_1.jpg",
+          "/phillip_2.jpg",
+          "/phillip_3.jpg"
+        ]
+      },
+      {
+        "name": "Freddy",
+        "style": "Comic, Watercolor",
+        "experience": "6 Jahre",
+        "bio": "Freddy bringt Farbe ins Studio mit seinen lebendigen Comic-Designs und Aquarell-Techniken.",
+        "images": [
+          "/freddy.jpg",
+          "/freddy_1.jpg",
+          "/freddy_2.jpg",
+          "/freddy_3.jpg"
+        ]
       }
     ]
   }

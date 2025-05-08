@@ -25,7 +25,6 @@ export default function Header() {
     { name: 'Kontakt', href: '/kontakt' },
   ];
 
-  // Format phone number for WhatsApp (remove spaces, +, etc.)
   const whatsappNumber = siteContent.siteInfo.phone.replace(/\s+|\+/g, '');
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 

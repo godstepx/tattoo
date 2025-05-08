@@ -81,6 +81,21 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-12">
+            <p>
+              Um einen <strong>Termin für dein Tattoo</strong> zu vereinbaren, schicke uns am besten direkt eine E-Mail an{' '}
+              <a href="mailto:booking.roarink@gmail.com" className="text-accent hover:underline">
+                booking.roarink@gmail.com
+              </a>{' '}
+              mit deinen konkreten Ideen für das Motiv, gerne auch mit Fotoanhängen. Wir beraten Dich im Anschluss mit einem{' '}
+              <strong>Beratungstermin</strong> ausführlich. Der Preis hängt von der Größe und dem Aufwand ab, die wir im Beratungsgespräch
+              einschätzen können.
+            </p>
+            <p className="mt-4">
+              Bei Terminvereinbarung benötigen wir eine Anzahlung in Höhe von <strong>50,00 €</strong>.
+            </p>
+          </div>
         </div>
       </div>
     </section>

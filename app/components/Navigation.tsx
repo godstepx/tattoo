@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <nav className="absolute top-0 left-0 w-full py-4 bg-transparent z-20">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="hidden md:flex flex-1 justify-start space-x-8">
+        <div className="hidden md:flex flex-1 justify-end space-x-8 pr-16">
           <Link href="/" className="text-black hover:text-secondary transition-colors">
             HOME
           </Link>
@@ -20,7 +20,7 @@ const Navigation = () => {
           </Link>
         </div>
 
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 flex justify-center">
           <Link href="/">
             <div className="p-2">
               <Image 
@@ -34,13 +34,15 @@ const Navigation = () => {
           </Link>
         </div>
 
-        <div className="hidden md:flex flex-1 justify-end items-center space-x-8">
-          <Link href="/kontakt" className="text-black hover:text-secondary transition-colors">
-            KONTAKT
-          </Link>
-          <Link href="/infos" className="text-black hover:text-secondary transition-colors">
-            INFOS
-          </Link>
+        <div className="hidden md:flex flex-1 justify-between items-center pl-16">
+          <div className="flex space-x-8">
+            <Link href="/kontakt" className="text-black hover:text-secondary transition-colors">
+              KONTAKT
+            </Link>
+            <Link href="/infos" className="text-black hover:text-secondary transition-colors">
+              INFOS
+            </Link>
+          </div>
           <div className="flex space-x-4">
             <Link href={siteContent.siteInfo.socialMedia.instagram} className="text-black hover:text-secondary" aria-label="Instagram">
               <FaInstagram size={20} />
@@ -50,16 +52,6 @@ const Navigation = () => {
             </Link>
           </div>
         </div>
-
-        <button 
-          className="md:hidden text-black focus:outline-none" 
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle Menu"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
       </div>
 
       {isMobileMenuOpen && (
