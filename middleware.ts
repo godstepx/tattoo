@@ -18,17 +18,15 @@ const basicAuth = (req: NextRequest) => {
 };
 
 export function middleware(req: NextRequest) {
-  if (process.env.NODE_ENV === 'development') {
-    const isProtectedPath = !req.nextUrl.pathname.startsWith('/api'); // Exclude API routes if needed
+  const isProtectedPath = !req.nextUrl.pathname.startsWith('/api'); // Exclude API routes if needed
 
-    if (isProtectedPath && !basicAuth(req)) {
-      return new NextResponse('Authentication required', {
-        status: 401,
-        headers: {
-          'WWW-Authenticate': 'Basic realm="Secure Area"',
-        },
-      });
-    }
+  if (isProtectedPath && !basicAuth(req)) {
+    return new NextResponse('Authentication required', {
+      status: 401,
+      headers: {
+        'WWW-Authenticate': 'Basic realm="Secure Area"',
+      },
+    });
   }
 
   return NextResponse.next();
